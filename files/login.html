@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel = "stylesheet" href="login.css">
+
+</head>
+
+<body>
+  <!-- main -->
+  <div class="topnav">
+    <a class="active">Voting System</a>
+    <div class="topnav-right">
+      <a href="register">SignUp</a>
+      <a href="login">Login</a>
+    </div>
+  </div>
+  <div class="verticalnav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/getresult">Result</a></li>
+		  <li><a href="/electionList">Elections</a></li>
+      <li><a href="/admin">Admin</a></li>
+    </ul>
+  </div>
+  <div class="main-w3layouts wrapper" style="margin-left:25%;margin-top:50px;padding:1px 16px;height:1000px;">
+    <center>
+      <h1>Voter Login</h1>
+      <div class="main-agileinfo">
+        <div class="agileits-top">
+          <form action="/login" method="POST">
+
+            <label name="nid">Nid: </label>
+            <input class="text" type="text" name="nid" placeholder="NID Number" id="nid"><br><br>
+
+            <label name="nid">Email: </label>
+            <input class="text" tyoe="text" name="email" placeholder="Email@gmail.com" id="email"><br><br>
+
+            <label name="nid">Passward: </label>
+            <input class="text" type="password" name="Password" placeholder="Password" required=""><br>
+            <br>
+            <input type="submit" value="LOGIN"> <a href="/user"></a>
+          </form>
+        </div>
+    </center>
+  </div>
+
+</body>
+
+</html>

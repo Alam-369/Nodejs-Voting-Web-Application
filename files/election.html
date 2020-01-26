@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang=''>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a class="active">Voting System</a>
+    <div class="topnav-right">
+      <a href="register">SignUp</a>
+      <a href="login">Login</a>
+    </div>
+  </div>
+  <div class="verticalnav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="/electionList">Election</a></li>
+      <li><a href="/logout">LogOut</a></li>
+    </ul>
+  </div>
+
+  <div class="main-w3layouts wrapper" style="margin-left:25%;margin-top:50px;padding:1px 16px;height:1000px;">
+
+    <div class="form">
+      <center>
+        <h1>Add Election </h1>
+        <form action="/addElection" method="post">
+          <label class="text">Election Name: </label>
+          <input class="text" type="text" name="addElection" placeholder="Add Election" required=""><br>
+          <br>
+          <label for="division">Division: </label>
+          <input class="text" type="text" name="division" placeholder="Division" required> <br><br>
+          <label for="distric">Distric: </label>
+          <input class="text" type="text" name="distric" placeholder="Distric" required> <br><br>
+          <label for="thana">Thana: </label>
+          <input class="text" type="test" name="thana" placeholder="Thnana" required> <br><br>
+          <input type="submit" value="ADD">
+        </form>
+        <br><br><br>
+        <h1>Add Anouncement </h1>
+        <form action="/addNews" method="POST" id = "katha">
+          
+          <label>Anouncement:</label>
+          <input type="text" name="name"placeholder="News Header" required><br><br>
+          <label>Date:</label>
+          <input type="date" name="date"placeholder="Date" required><br><br>
+          
+          <input type="submit" value="ADD">
+        </form>
+        <textarea rows="8" cols="50" name="comment" form="katha">
+          Enter text here...</textarea>
+          
+      </center>
+    </div>
+  </div>
+
+</body>
+<html>

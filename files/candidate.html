@@ -1,0 +1,46 @@
+<doctype html>
+    <html lang=''>
+    
+    <head>
+      <meta charset="UTF-8">
+      <link rel = "stylesheet" href="login.css">
+    </head>
+    
+    <body>
+
+      <div class="topnav">
+         <a class="active">Voting System</a>
+         <div class="topnav-right">
+           <a href="/register">SignUp</a>
+           <a href="/login">Login</a>
+         </div>
+       </div>
+       <div class="verticalnav">
+         <ul>
+           <li><a href="/">Home</a></li>
+           <li><a href="/getresult">Result</a></li>
+             <li><a href="/electionList">Elections</a></li>
+           <li><a href="/admin">Admin</a></li>
+         </ul>
+       </div>
+    <div class="main-w3layouts wrapper" style="margin-left:25%;margin-top:50px;padding:1px 16px;height:1000px;""><center>
+          <h1>Add Candidates</h1>
+          <div class="main-agileinfo">
+                <div class="agileits-top">
+             <div class="form">
+                <form action="/addCandidate" method="post">
+                  
+                  <label name = "candidate">Candidate:  </label>
+                   <input class="text" type="text" name="candidateName" placeholder="Candidate Name" required=""><br><br>
+              
+                    <label name = "sign">Sign:  </label>
+                   <input class="text" type="text" name="sign" placeholder="Sign" required=""><br> <br>
+                   <input type="submit" value="ADD">
+                </form>
+             </div>
+          </div>
+       </div></center>
+       </div>
+    
+    </body>
+    <html>

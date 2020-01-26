@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel = "stylesheet" href="login.css">
+</head>
+
+<body>
+	<!-- main -->
+	<div class="topnav">
+		<a class = "active">Voting System</a>
+		<div class="topnav-right">
+		  <a href="register">SignUp</a>
+		  <a href="login">Login</a>
+		</div>
+	  </div>
+	  <div class="verticalnav">
+		<ul>
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/getresult">Result</a></li>
+		  <li><a href="/electionList">Elections</a></li>
+		  <li><a href="/admin">Admin</a></li>
+		</ul>
+	  </div>
+	<div class="main-w3layouts wrapper" style="margin-left:25%;margin-top:50px;padding:1px 16px;height:1000px;background-image: url('vote_backtaound.jpg');"><center>
+		<h1><b>Want to vote?Just sign-up</b></h1><br><br>
+		<b style="color: brown;">!!!!!!According to the Nid!!!!!</b><br><br>
+		
+				<form action="/register" method="POST">
+                    <label for="nid">Nid: </label>
+					<input class="text" type="text" name="Nid" placeholder="NID Number" required><br><br>
+                  
+                    <label for="email">Email: </label>
+					<input class="text" type="email" name="email" placeholder="Email" id="email" required><br><br>
+                  
+                    <label for="name">Name:  </label>
+					<input class="text" type="text" name="name" placeholder="Name" id="name" required><br><br>
+                  
+					
+					<label for="birthdate">Date of Birth: </label>
+					<input class="text" type="date" name="birthdate" placeholder="Birth Date"required> <br><br>
+					
+					<label for="division">Division: </label>
+					<input class="text" type="text" name="division" placeholder="Division" required> <br><br>
+					<label for="distric">Distric: </label>
+					<input class="text" type="text" name="distric" placeholder="Distric" required> <br><br>
+					<label for="thana">Thana: </label>
+                    <input class="text" type="test" name="thana" placeholder="Thnana" required> <br><br>
+				    <label for = "Password">Password: </label>
+					<input class="text w3lpass" type="Password" name="Password" placeholder="Password" id="Password" required>
+					<br> 
+					
+					<input type="submit" value="SIGNUP"id="submit" >
+				</form>
+				<p>Already have an Account? <a href="login"> Login Now!</a></p>
+             </center>
+			</div>
+		
+</body>
+
+</html>
